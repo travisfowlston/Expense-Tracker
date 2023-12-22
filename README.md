@@ -12,7 +12,7 @@ Web application that allows users to easily track and manage their expenses. The
 
 ## Task Breakdown
 
-###Project Setup:
+### Project Setup:
 
 - Initialize a new Node.js project.
 - Set up the project folder structure following the MVC paradigm.
