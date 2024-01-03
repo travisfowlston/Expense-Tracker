@@ -40,3 +40,5 @@ Expenses.init(
     modelName: 'expenses',
   }
 );
+
+module.exports = Expenses;
