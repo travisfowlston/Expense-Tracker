@@ -1,27 +1,26 @@
 const User = require('./User');
 const Expenses = require('./Expenses');
-const Categories = require('./Categories');
+const Category = require('./Categories');
 
+// User Model Associations
 User.hasMany(Expenses, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
+// Expenses Model Associations
 Expenses.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-Expenses.belongsTo(Categories, {
+Expenses.belongsTo(Category, {
   foreignKey: 'category_id',
 });
 
-Categories.hasMany(Expenses, {
+// Categories Model Associations
+Category.hasMany(Expenses, {
   foreignKey: 'category_id',
   onDelete: 'CASCADE',
 });
 
-//q: what does the code above do?
-//a: creates a one-to-many relationship between the user and expenses models
-//q: what does onDelete: 'CASCADE' do?
-
-module.exports = { User, Expenses, Categories };
+module.exports = { User, Expenses, Category };
