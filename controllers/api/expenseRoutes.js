@@ -1,5 +1,6 @@
 const router=require('express').Router();
-const { User,Expenses } = require('../../models',);
+
+const {Expenses, User } = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const expense=await Expenses.find({}  
