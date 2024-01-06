@@ -94,3 +94,6 @@ Web application that allows users to easily track and manage their expenses. The
 - Travis Fowlston
 - Logan Fullerton
 - Neilsen Zulueta
+
+## github
+https://github.com/travisfowlston/Expense-Tracker
