@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -11,19 +19,28 @@
 <body>
   <div >
     <header>
-      <h1>Expense Tracker</h1>
       <nav>
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        {{#if logged_in}}|
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
+      <div class="header-container teal lighten-2 z-depth-3">
+        <div class="banner white-text">
+          <h1><strong>Expense Tracker</strong></h1>
+          <p>Track Your Spending!</p>
+          <i class="material-icons medium">trending_up</i
+          ><i class="material-icons medium">analytics</i>
+        </div>
+      </div>
+    
     </header>
     <main>
       {{{ body }}}
+      
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <footer>
       
     </footer>
@@ -34,5 +51,5 @@
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
