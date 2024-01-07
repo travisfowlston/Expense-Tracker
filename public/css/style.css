@@ -21,18 +21,13 @@ header {
 }
 
 .news-list a {
-  font-size: 24px; 
+  font-size: 24px;
   text-decoration: underline;
 }
 .news-list li {
-  padding-left: 20px; 
-  margin-top: 10px;    
+  padding-left: 20px;
+  margin-top: 10px;
 }
-
-
-
-
-
 
 /* style me */
 /* General Body Styles */
@@ -42,29 +37,29 @@ header {
     color: #333;
     line-height: 1.6;
   } */
-  
-  /* Header Styles */
-  /* header {
+
+/* Header Styles */
+/* header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
   } */
-  
-  /* Navigation Styles */
-  /* nav a {
+
+/* Navigation Styles */
+/* nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
   } */
-  
-  /* nav a:hover {
+
+/* nav a:hover {
     color: #dddddd;
   } */
-  
-  /* Button Styles */
-  /* button.no-button {
+
+/* Button Styles */
+/* button.no-button {
     background: none;
     color: #fff;
     border: none;
@@ -72,8 +67,8 @@ header {
     font: inherit;
     cursor: pointer;
   } */
-  
-  /* button.btn-primary {
+
+/* button.btn-primary {
     background-color: #555;
     color: #fff;
     border: none;
@@ -81,36 +76,36 @@ header {
     margin-top: 10px;
     cursor: pointer;
   } */
-  
-  /* button.btn-primary:hover {
+
+/* button.btn-primary:hover {
     background-color: #666;
   } */
-  
-  /* Form Styles */
-  /* .form-group label {
+
+/* Form Styles */
+/* .form-group label {
     display: block;
     margin-bottom: 5px;
   } */
-  
-  /* .form-input {
+
+/* .form-input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
   } */
-  
-  /* Footer Styles */
-  /* footer {
+
+/* Footer Styles */
+/* footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-top: 20px;
   } */
-  
-  /* Utility Classes */
-  /* .row {
+
+/* Utility Classes */
+/* .row {
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
@@ -121,9 +116,9 @@ header {
     max-width: 50%;
     padding: 0 15px;
   } */
-  
-  /* Responsive */
-  /* @media (max-width: 768px) {
+
+/* Responsive */
+/* @media (max-width: 768px) {
     .row {
       flex-direction: column;
     }
@@ -132,4 +127,3 @@ header {
       max-width: 100%;
     }
   } */
-  
