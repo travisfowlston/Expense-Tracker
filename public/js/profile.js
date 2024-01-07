@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems);
 });
+
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('select');
+  var options = {};
   var instances = M.FormSelect.init(elems, options);
 });
+
 const newFormHandler = async (event) => {
   event.preventDefault();
 
