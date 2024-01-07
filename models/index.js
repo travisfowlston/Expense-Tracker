@@ -12,6 +12,4 @@ Expenses.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-
-
-module.exports = { User, Expenses};
+module.exports = { User, Expenses };
