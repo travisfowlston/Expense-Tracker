@@ -24,6 +24,9 @@ Expenses.init(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
+    description: {
+      type: DataTypes.STRING,
+    },
     date: {
       type: DataTypes.DATE,
       allowNull: false,
