@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection');
+const Handlebars = require('handlebars');
 
 class Expenses extends Model {}
 
@@ -17,7 +17,7 @@ Expenses.init(
       allowNull: false,
     },
     category: {
-      type: DataTypes.STRING,
+      type:DataTypes.TEXT,
       allowNull: false,
     },
     amount: {
@@ -26,6 +26,7 @@ Expenses.init(
     },
     description: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
     date: {
       type: DataTypes.DATE,

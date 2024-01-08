@@ -8,3 +8,13 @@ module.exports = {
     return parseInt(amount).toLocaleString();
   }
 };
+const Handlebars = require('handlebars');
+
+// Define the lookupCategory helper
+Handlebars.registerHelper('lookupCategory', function(categoryId) {
+  // Retrieve the name of the category based on its id
+  const category = categories.find(category => category.id === categoryId);
+  return category ? category.name : '';
+});
+
+module.exports = Handlebars;

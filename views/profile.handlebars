@@ -12,12 +12,12 @@
       <div class='input-field col s12'>
         <select>
           <option value='' disabled selected>Select Expense Category</option>
-          <option value='1'>Groceries</option>
-          <option value='2'>Gas</option>
-          <option value='3'>Shopping</option>
-          <option value='4'>Bills and Utilities</option>
-          <option value='5'>Entertainment</option>
-          <option value='6'>Travel</option>
+          <option value='Groceries'>Groceries</option>
+          <option value='Gas'>Gas</option>
+          <option value='Shopping'>Shopping</option>
+          <option value='Bills and Utilities'>Bills and Utilities</option>
+          <option value='Entertainment'>Entertainment</option>
+          <option value='Travel'>Travel</option>
         </select>
       </div>
       <div class='row'>
@@ -66,11 +66,14 @@
     </div>
   </div>
 <div>
+  
   {{#if expenses}}
   {{#each expenses}} 
   <div class="card">
     <p>{{expense_name}}</p>
-    <p>{{amount}}</p>
+    <p>${{amount}}</p>
+    <p>{{category}}</p>
+    <p>{{date}}</p>
   </div>
   {{/each}}
 {{/if}}
