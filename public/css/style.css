@@ -20,15 +20,6 @@ header {
   padding-bottom: 30px;
 }
 
-.news-list a {
-  font-size: 24px;
-  text-decoration: underline;
-}
-.news-list li {
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
 /* style me */
 /* General Body Styles */
 /* body {
