@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = {};
   var instances = M.FormSelect.init(elems, options);
 });
+// Set the value of the textarea
+document.getElementById('textarea1').value = 'New Text';
+
+// Auto-resize the textarea
+document.getElementById('textarea1').style.height = 'auto';
+document.getElementById('textarea1').style.height = document.getElementById('textarea1').scrollHeight + 'px';
 
 const newFormHandler = async (event) => {
   event.preventDefault();
@@ -34,3 +40,4 @@ const newFormHandler = async (event) => {
     }
   }
 };
+
