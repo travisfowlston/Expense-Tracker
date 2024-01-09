@@ -21,20 +21,27 @@
       <header>
         <nav>
           {{#if logged_in}}|
-            <button
-              class='btn waves-effect waves-light'
-              id='logout'
-              type='submit'
-              name='action'
-            >Logout
-              <i class='material-icons right'>send</i></button>
-          {{else}}
-            <a href='/login'>login</a>
+            <ul class="right hide-on-med-and-down">
+            <li><a href="/profile" class="waves-effect waves-light btn"
+                    id='profile'
+                    type='submit'
+                    name='action'>Profile</a></li></li>
+            <li><a class="waves-effect waves-light btn"
+                    id='logout'
+                    type='submit'
+                    name='action'>LogOut</a></li>
+            </ul>
+            {{else}}
+            <ul class="right hide-on-med-and-down">
+            <li><a href="/login"class="waves-effect waves-light btn"
+                    id='login'
+                    type='submit'
+                    name='action'>LogIn</a></li></li>
           {{/if}}
         </nav>
         <div class='header-container teal lighten-2 z-depth-3'>
           <div class='banner white-text'>
-            <h1><strong>Expense Tracker</strong></h1>
+            <h1><a href="/"><strong>Expense Tracker</strong></a></h1>
             <p>Track Your Spending!</p>
             <i class='material-icons medium'>trending_up</i><i
               class='material-icons medium'
