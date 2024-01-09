@@ -61,6 +61,6 @@ document
   .querySelector('#createExpense')
   .addEventListener('click', newFormHandler);
 
-/* document
+document
   .querySelector('.report-list')
-  .addEventListener('click', delButtonHandler); */
+  .addEventListener('click', delButtonHandler);
