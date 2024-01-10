@@ -68,7 +68,8 @@
       >Create</button>
     </div>
   </div>
-
+ <div class="row">
+  <div class="col s3">
   <div class='report-list'>
     {{#if expenses}}
       {{#each expenses}}
@@ -107,7 +108,8 @@
       {{/each}}
     {{/if}}
   </div>
-
+</div>
+<div class="col s9">
   <div>
     <canvas id='myChart' style="width:400px; height:400px;"></canvas>
 </div>
@@ -145,8 +147,8 @@
         });
     });
 </script>
-
-
+</div>
+ </div>
 </div>
 <script
   src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
