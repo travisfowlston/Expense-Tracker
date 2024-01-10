@@ -4,8 +4,12 @@ const withAuth = require('../../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
-    const expense = await Expenses.findAll;
-    res.status(200).json(expense);
+    const expense = await Expenses.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+    });
+    res.status(200).json({ expense });
   } catch (err) {
     res.status(500).json(err);
   }
