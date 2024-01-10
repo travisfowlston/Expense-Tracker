@@ -34,8 +34,8 @@ const sess = {
   saveUninitialized: true,
   // where to store the session on the server
   store: new SequelizeStore({
-    db: sequelize
-  })
+    db: sequelize,
+  }),
 };
 
 app.use(session(sess));
