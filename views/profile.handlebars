@@ -1,12 +1,15 @@
 <div id='expenseContainer'>
   <h1>My Expense Profile</h1>
   <!-- Modal Trigger -->
-  <a class='waves-effect waves-light btn-large modal-trigger' href='#modal1'>
+  <button
+    class='waves-effect waves-light btn-large modal-trigger'
+    data-target='modal-create'
+  >
     <i class='material-icons right'>analytics</i>
     Add New Report
-  </a>
+  </button>
   <!-- Modal Structure -->
-  <div id='modal1' class='modal'>
+  <div id='modal-create' class='modal'>
     <div class='modal-content'>
       <h4>Create New Expense Report</h4>
       <div class='input-field col s12'>
@@ -61,34 +64,51 @@
       <button
         type='submit'
         class='waves-effect waves-green btn-flat'
-        id="createExpense"
+        id='createExpense'
       >Create</button>
     </div>
   </div>
-<div id="expenseMain">
-  {{#if expenses}}
-  {{#each expenses}} 
-  <div class="card">
-    <p>{{expense_name}}</p>
-    <p>${{amount}}</p>
-    <p>{{category}}</p>
-    <p>{{date}}</p>
-  </div>
-  {{/each}}
-  {{/if}}
-  </div>
-  <script> const helper= require('./utils');</script>
-  </div>
-  <div class="card" id="chart-container">
-  {{#each expenses}}
-      <div>
-        <h3>{{Category}}</h3>
-        <p>Total Amount: ${{sumByCategory 'groceries' expenses}}</p>
-      </div>
-    {{/each}}
-    
-</div>
 
+  <div class='report-list'>
+    {{#if expenses}}
+      {{#each expenses}}
+        <div class='card'>
+          <div class='card-content'>
+            <span class='card-title'>{{this.expense_name}}</span>
+          </div>
+          <div class='card-action'>
+            <button
+              class='waves-effect waves-light btn modal-trigger'
+              data-target='modal-view-{{this.id}}'
+            >
+              View Details
+            </button>
+            <button
+              class='waves-effect waves-light btn red delete-button'
+              data-id='{{this.id}}'
+            >Delete</button>
+          </div>
+        </div>
+        <div id='modal-view-{{this.id}}' class='modal'>
+          <div class='modal-content'>
+            <h3>{{this.expense_name}}</h3>
+            <p>Created on: {{format_date this.date}}</p>
+            <p>Amount: ${{this.amount}}</p>
+            <p>Category: {{this.category}}</p>
+            <p>Description: {{this.description}}</p>
+          </div>
+          <div class='modal-footer'>
+            <a
+              href='#!'
+              class='modal-close waves-effect waves-green btn-flat'
+            >Close</a>
+          </div>
+        </div>
+      {{/each}}
+    {{/if}}
+  </div>
+
+</div>
 <script
   src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
 ></script>
