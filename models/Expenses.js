@@ -17,7 +17,7 @@ Expenses.init(
       allowNull: false,
     },
     category: {
-      type:DataTypes.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     amount: {
