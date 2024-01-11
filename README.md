@@ -1,14 +1,22 @@
 # Expense Tracker Dashboard
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Project Description
 
-Web application that allows users to easily track and manage their expenses. The Expense Tracker will provide a user-friendly interface for logging expenses, categorizing them, and generating reports to help users understand their spending habits.
+A web application that allows users to easily track and manage their expenses. The Expense Tracker will provide a user-friendly interface for logging expenses, categorizing them, and generating reports to help users understand their spending habits.
 
 ## User Story
 
 - As a consumer
 - I WANT to track my expenses
 - SO THAT I can evaluate and manage my spending habits.
+
+## Deployment Screenshot
+
+![deployment-screenshot](./public/images/deployment-screenshot.JPG)
+
+[Deployment Link](https://tracker-of-expenses-5d12b9bcba5b.herokuapp.com/)
 
 ## Task Breakdown
 
@@ -26,7 +34,6 @@ Web application that allows users to easily track and manage their expenses. The
 
 ### User Authentication:
 
-- Implement user authentication using Passport.js.
 - Create registration and login routes with validation.
 - Secure user passwords using hashing.
 
@@ -94,6 +101,3 @@ Web application that allows users to easily track and manage their expenses. The
 - Travis Fowlston
 - Logan Fullerton
 - Neilsen Zulueta
-
-## github
-https://github.com/travisfowlston/Expense-Tracker

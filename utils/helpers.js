@@ -23,6 +23,4 @@ const helpers = {
 
 // Calculate the sum of expenses by category
 
-
 module.exports = helpers;
-
