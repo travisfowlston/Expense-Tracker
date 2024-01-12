@@ -24,7 +24,7 @@ A web application that allows users to easily track and manage their expenses. T
 
 - Initialize a new Node.js project.
 - Set up the project folder structure following the MVC paradigm.
-- Install necessary dependencies, including Express.js, Handlebars.js, Sequelize, Passport.js, Chart.js, and other required packages.
+- Install necessary dependencies, including Express.js, Handlebars.js, Sequelize, Chart.js, and other required packages.
 
 ### Database Setup:
 
