@@ -4,7 +4,7 @@
 
 ## Project Description
 
-Expense Tracker is a full-stack web application designed to streamline expense management. Built using MySQL as the database, Sequelize as the ORM, and Handlebars.js for templating, this application leverages the power of node.js and express.js on the backend to ensure seamless functionality. With a sleek and responsive UI powered by Materialize CSS, users can effortlessly log their expenses, categorize them, and generate insightful reports to gain valuable insights into their spending habits.
+The Expense Tracker Dashboard is a full-stack web application designed to streamline expense management. Built using MySQL as the database, Sequelize as the ORM, and Handlebars.js for templating, this application leverages the power of node.js and express.js on the backend to ensure seamless functionality. With a sleek and responsive UI powered by Materialize CSS, users can effortlessly log their expenses, categorize them, and generate insightful reports to gain valuable insights into their spending habits.
 
 ## User Story
 
