@@ -31,3 +31,31 @@ header {
 .brand-logo {
   margin-left: 2rem;
 }
+
+@media screen and (max-width: 450px) {
+  .brand-logo {
+    font-size: 1.3rem !important;
+    padding-right: 55px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .brand-logo {
+    font-size: 1.1rem !important;
+    padding-right: 55px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .brand-logo {
+    font-size: 1rem !important;
+    padding-right: 55px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .brand-logo {
+    font-size: .95rem !important;
+    padding-right: 55px !important;
+  }
+}

@@ -1,9 +1,3 @@
-// Side Nav
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, options);
-});
-
 // Initiate the modal
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
